@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Script</title>
+</head>
+<body>
+	<script>
+		document.write("Hello World!")
+		document.write("<p>write a p</p>")
+	</script>
+	<noscript>Sorry! Your browser is no supportted JavaScript</noscript>
+
+	<h1>我的第一个JS</h1>
+	<p id="demo"> 
+	点击触发js事件</p>
+<script>
+	function myFun(){
+		document.getElementById("demo").innerHTML="Hello JavaScript"	
+	}
+	function changeColor(){
+		ele = document.getElementById("demo")
+		ele.style.color = "red"
+	}
+</script>
+	<!-- <input type="button" value="点击我" onclick="myFun"><br> -->
+
+	<button type="button" onclick="myFun()">这个才是真的</button><br>
+	<button type="button" onclick="changeColor()">换一下&lt;<颜色</button><br>
+
+</body>
+
+</html>

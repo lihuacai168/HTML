@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>myCanvas</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="300" height="400" style="border: 1px solid #c3c3c3;"></canvas>
+	<canvas id="myCanvas_line" width="300" height="400" style="border: 1px solid #c3c3c3;"></canvas>
+	<canvas id="myCanvas_circle" width="300" height="400" style="border: 1px solid #c3c3c3;"></canvas>
+	<p>jljl</p>
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#000000";
+ctx.fillRect(1,1,120,150);
+
+</script>
+
+<script>
+
+var c = document.getElementById("myCanvas_line");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+
+</script>
+
+<script>
+
+var c = document.getElementById("myCanvas_circle");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(45,200,45,0,1*Math.PI,true);
+ctx.stroke();
+
+</script>
+
+</body>
+</html>
